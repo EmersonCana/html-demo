@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-areas:
+          "head"
+          "sub"
+          "ads"
+          "cat-1"
+          "cat-long"
+          "cat-2";
+
+        margin: 0px 20% 0px 20%;
+      }
+
+      nav {
+        border: 1px solid black;
+      }
+      .sub-nav {
+        grid-area: sub;
+        border: 1px solid black;
+      }
+      .sub-nav ul {
+        display: flex;
+        gap: 20px;
+      }
+
+      .sub-nav ul li {
+        list-style-type: none;
+      }
+      section {
+        grid-area: ads;
+        border: 1px solid black;
+      }
+      article {
+        grid-area: cat-1;
+      }
+
+      .cat {
+        display: flex;
+        gap: 20px;
+      }
+
+      .banner {
+        background-image: url("https://img.freepik.com/free-vector/abstract-website-banner-with-modern-shapes_1361-1738.jpg?w=2000");
+        background-size: cover;
+        height: 60px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+
+      #to-shop {
+        margin-right: 20px;
+        width: 300px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>nav</nav>
+      <div class="sub-nav">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
+      </div>
+      <section>ads</section>
+      <article>
+        <div class="cat">
+          <div class="category">1</div>
+          <div class="category">2</div>
+          <div class="category">3</div>
+        </div>
+
+        <div class="category-long">
+          <div class="banner">
+            <button id="to-shop">Shop</button>
+          </div>
+        </div>
+
+        <div class="cat">
+          <div class="category">4</div>
+          <div class="category">5</div>
+          <div class="category">6</div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 1px solid black;
+      }
+      .border {
+        border: 1px solid black;
+      }
+
+      .margin {
+        margin: 10px;
+      }
+
+      .padding {
+        padding: 10px;
+      }
+
+      nav {
+        width: 100vw;
+        height: 40px;
+      }
+      .nav-menu {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+      }
+      .nav-item {
+        width: 50px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="border">
+      <div style="display: flex; justify-content: space-around">
+        <div class="nav-menu">
+          <div class="nav-item border"></div>
+          <div class="nav-item border"></div>
+          <div class="nav-item border"></div>
+          <div class="nav-item border"></div>
+        </div>
+        <div class="search margin">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="margin">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<parent>
+  //flex //justify-content: space-between;
+  <child></child>
+  <child></child>
+  <child></child>
+</parent>

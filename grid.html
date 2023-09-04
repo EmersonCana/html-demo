@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-areas:
+          "head head head head head"
+          "content content content content side"
+          "foot foot foot foot foot";
+      }
+
+      header {
+        background-color: blue;
+        grid-area: head;
+      }
+      article {
+        background-color: gray;
+        grid-area: content;
+      }
+
+      article .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      aside {
+        background-color: green;
+        grid-area: side;
+      }
+      footer {
+        background-color: yellow;
+        grid-area: foot;
+      }
+
+      .card {
+        background-color: rgb(222, 220, 220);
+        padding: 20px;
+        border: 1px solid gray;
+      }
+      .card-header {
+        /*  */
+        border-bottom: 1px solid gray;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+      nav ul {
+        display: flex;
+        gap: 20px;
+      }
+      nav ul li {
+        list-style-type: none;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        padding: 20px;
+      }
+
+      @media (max-width: 767px) {
+        main {
+          display: grid;
+          grid-template-areas:
+            "head"
+            "content"
+            "side"
+            "foot";
+        }
+
+        header {
+          background-color: blue;
+          grid-area: head;
+        }
+        article {
+          background-color: gray;
+          grid-area: content;
+        }
+        aside {
+          background-color: green;
+          grid-area: side;
+        }
+        footer {
+          background-color: yellow;
+          grid-area: foot;
+        }
+
+        article .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Marketplace</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <!-- img -->
+            </div>
+            <div class="card-body">
+              <span>Product Name</span>
+              <span>$100.00</span>
+              <a href="#">Buy</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <header><h2>Login</h2></header>
+        <div class="container">
+          <form action="#" method="post">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            /><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            /><br />
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+      </aside>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>

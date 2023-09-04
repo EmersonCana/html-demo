@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 2</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      div {
+        background-color: gray;
+      }
+
+      @media (max-width: 767px) {
+        main {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      /* Medium screen and up */
+      @media (min-width: 768px) {
+        main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* PC and up */
+      @media (min-width: 1024px) {
+        main {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1280px) {
+        main {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </main>
+  </body>
+</html>
