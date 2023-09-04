@@ -9,12 +9,17 @@ body {
 nav {
   background-color: #36ab55;
   padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
 }
 
 ul {
   list-style-type: none;
-  display: flex;
-  gap: 30px;
 }
 
 a {
@@ -44,4 +49,16 @@ footer {
   text-align: center;
   padding: 30px;
   text-transform: capitalize;
+  color: white;
+}
+
+.footer-division {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 200px;
+  background-color: #ddd;
 }
