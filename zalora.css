@@ -18,7 +18,7 @@ main {
 
 section,
 article {
-  margin: 0px 20% 0px 20%;
+  margin: 0 auto;
 }
 
 nav {
